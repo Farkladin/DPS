@@ -1,4 +1,6 @@
 ## 1. 벌집
+바깥쪽 칸의 수가 6씩 증가한다.
+
 ```C++
 #include <iostream>
 using namespace std;
@@ -10,7 +12,7 @@ int main() {
         cout << "1\n";
     } else {
         --N;
-        int a =6 , cnt = 1;
+        int a = 6, cnt = 1;
         while (N > 0){
             N -= a;
             ++cnt;
@@ -26,6 +28,8 @@ int main() {
 
 ---
 ## 2. 집합
+$1$, $2$, $\dots$, $20$ 만이 원소가 될 수 있다. 충분히 작으므로 bitset으로 관리한다.
+
 ```C
 #include <stdio.h>
 #include <stdint.h>
